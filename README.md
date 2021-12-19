@@ -40,15 +40,16 @@ push commit message : aoc-dayX-language-completed
 | 8-12-2021  | Seven Segment Search    | Easy             | 3 hours    | ✅          |
 | 9-12-2021  | Smoke Basin             | Easy             | 3 hours    | ✅          |
 | 10-12-2021 | Syntax Scoring          | Easy             | 3 hours    | ✅          |
-| 11-12-2021 | Dumbo Octopus           | Easy             |            |            |
-| 12-12-2021 | Passage Pathing         |                  |            |            |
-| 13-12-2021 | Transparent Origami     |                  |            |            |
-| 14-12-2021 | Extended Polymerization |                  |            |            |
-| 15-12-2021 | Chiton                  |                  |            |            |
-| 16-12-2021 | Packet Decoder          |                  |            |            |
-| 17-12-2021 |                         |                  |            |            |
-| 18-12-2021 |                         |                  |            |            |
-| 19-12-2021 |                         |                  |            |            |
+| 11-12-2021 | Dumbo Octopus           | Easy             | 3 hours    | ✅          |
+| 12-12-2021 | Passage Pathing         | Hard             | 3 hours    | ✅          |
+| 13-12-2021 | Transparent Origami     | Hard             | 3 hours    | ✅          |
+| 14-12-2021 | Extended Polymerization | Hard             | 3 hours    | ✅          |
+| 15-12-2021 | Chiton                  | Hard             | 3 hours    | ✅          |
+| 16-12-2021 | Packet Decoder          | Hard             | 3 hours    | ✅          |
+| 17-12-2021 | Trick Shot              | Hard             | 3 hours    | ✅          |
+| 17-12-2021 | Trick Shot              | Hard             | 3 hours    | ✅          |
+| 18-12-2021 | Snailfish               | HELLL            | inf        | ✅          |
+| 19-12-2021 | Beacon Scanner          | HELLL            | inf        | ✅          |
 | 20-12-2021 |                         |                  |            |            |
 | 21-12-2021 |                         |                  |            |            |
 | 22-12-2021 |                         |                  |            |            |
