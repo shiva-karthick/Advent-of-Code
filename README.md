@@ -40,12 +40,12 @@ push commit message : aoc-dayX-language-completed
 | 8-12-2021  | Seven Segment Search    | Easy             | 3 hours    | ✅          |
 | 9-12-2021  | Smoke Basin             | Easy             | 3 hours    | ✅          |
 | 10-12-2021 | Syntax Scoring          | Easy             | 3 hours    | ✅          |
-| 11-12-2021 |                         |                  |            |            |
-| 12-12-2021 |                         |                  |            |            |
-| 13-12-2021 |                         |                  |            |            |
-| 14-12-2021 |                         |                  |            |            |
-| 15-12-2021 |                         |                  |            |            |
-| 16-12-2021 |                         |                  |            |            |
+| 11-12-2021 | Dumbo Octopus           | Easy             |            |            |
+| 12-12-2021 | Passage Pathing         |                  |            |            |
+| 13-12-2021 | Transparent Origami     |                  |            |            |
+| 14-12-2021 | Extended Polymerization |                  |            |            |
+| 15-12-2021 | Chiton                  |                  |            |            |
+| 16-12-2021 | Packet Decoder          |                  |            |            |
 | 17-12-2021 |                         |                  |            |            |
 | 18-12-2021 |                         |                  |            |            |
 | 19-12-2021 |                         |                  |            |            |
