@@ -50,7 +50,7 @@ push commit message : aoc-dayX-language-completed
 | 17-12-2021 | Trick Shot              | Hard             | 3 hours    | ✅          |
 | 18-12-2021 | Snailfish               | HELLL            | inf        | ✅          |
 | 19-12-2021 | Beacon Scanner          | HELLL            | inf        | ✅          |
-| 20-12-2021 |                         |                  |            |            |
+| 20-12-2021 | Trench Map              | HELLL            | inf        | ✅          |
 | 21-12-2021 |                         |                  |            |            |
 | 22-12-2021 |                         |                  |            |            |
 | 23-12-2021 |                         |                  |            |            |
