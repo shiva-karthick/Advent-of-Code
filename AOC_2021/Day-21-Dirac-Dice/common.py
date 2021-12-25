@@ -1,14 +1,13 @@
 from copy import deepcopy
 from rich import print
 from parse import findall, parse
-from math import prod
 # from more_itertools import chunked, ilen
 from collections import Counter, defaultdict
 from heapq import heappush, heappop
 # from tqdm import tqdm
 from time import perf_counter
 from contextlib import contextmanager
-from functools import cache, lru_cache
+# from functools import cache, lru_cache
 import re
 import statistics as stat
 import sys
@@ -72,16 +71,3 @@ def timer(s) -> float:
     yield
     end = perf_counter()
     print(f"{s}: {end - start:.5f}s")
-
-
-def shiftmod(n, m, shift=1):
-    """
-    Simlar to n % m except the result lies within [shift, m + shift).
-
-    Example:
-        shiftmod(10, 10, shift=1) == 10
-        shiftmod(11, 10, shift=1) == 1
-        shiftmod(11, 10, shift=2) == 11
-        shiftmod(12, 10, shift=2) == 2
-    """
-    return (n - shift) % m + shift
