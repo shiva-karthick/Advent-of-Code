@@ -1,6 +1,8 @@
 import re
 
 '''
+Thanks to Mustafa ! 
+
 it's not hard even, just tedious
 so basically, You have 2 cubes, represented by the min/max vertices
 what you need to do is keep track of a list of disjoint cubes representing the entire space
@@ -29,6 +31,21 @@ in the "overlaps method", you would store +(0,5)   -(2,5)   +(2,8)
 and then when computing the volume (or in this case length), you'd need to subtract off all the negative ones too
 and the more ranges (cuboids) you are keeping track of, the more of these "negative" ranges you would add
 and if you don't clean them up at some point you might just have some cuboids repeatedly turning on and off the same space, just wasting time
+
+TLDR
++ Instead of splitting a cube, I just add another cube which is the size of the intersection
+And store a flag to mark it as "negative"
++ So when I'm computing the area, I just subtract that off
+
+explanation.png
+> thanks. here's what I don't get: if I make an on cube, and another on cube, then I can have three cubes, the first two positive, and the intersection is negative, so that it doesn't get double counted. good.
+> yes, perfect
+the only difference between the ON and OFF cases would be
+you don't add the second cube to the set
+so in this case if BLUE was off, we'd still do the other 2 intersections and stuff the same way
+just not add blue in the end
+since we've already effectively "cancelled out" all the cells there
+
 '''
 
 
