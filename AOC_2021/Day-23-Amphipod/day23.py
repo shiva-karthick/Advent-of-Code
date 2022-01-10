@@ -4,54 +4,44 @@
     (That is , once any amphipod starts moving,
     any other amphipods currently in the hallway are locked in place
     and will not move again until they can move fully into a room.)
-
     can someone explain this, i think this is where im going wrong but im not sure
     does it mean that amphipods cant move from one position in the hallway to another
-
     yes
     you can only move room -> room, room -> hallway, hallway -> room
     you cannot move hallway -> hallway
-
     basically, each amphipod can only make up to 2 moves, ever
     out to the hall -> to the final place it needs to be
     it can't do anything else
-
     i always move room->hall and hall->room
     simplifies it
-
     each pod can only ever make at most 2 moves.
     one out of the room to the hall, one from the hall to he room in their final spot
     nothing else
-
 2.  
     @lru_cache(maxsize=None)
     def solve(grid):
         if all(in_correct_room(pod) for pod in grid.pods):
             return 0
-
         lowest = float('inf')
         for i, pod in enumerate(grid.pods):
             char, (row, col) = pod
             for (nrow, ncol) in grid.available_spots_for(pod):
                 step_cost = (abs(nrow-row) + abs(ncol-col)) * COST[char]
-
                 grid.pods[i] = (char, (nrow, ncol))
                 rec_cost = solve(grid)
                 grid.pods[i] = (char, (row, col))
-
                 if rec_cost + step_cost < lowest:
                     lowest = rec_cost + step_cost
         return lowest
     simple backtracking really
-
 3.  
     dijkstra = a* but heuristic 0
-
 4.  
     modular arithmetic is hard, i don't blame people
     i only know because i have been burned too often
     I found just putting input() right when the function is called and printing the grid super helpful
 '''
+
 # @Author : Mustafa
 # I took this code to read and understand the problem, all rights to the author,
 # his solutions are very understandbale to a layman like me :)
