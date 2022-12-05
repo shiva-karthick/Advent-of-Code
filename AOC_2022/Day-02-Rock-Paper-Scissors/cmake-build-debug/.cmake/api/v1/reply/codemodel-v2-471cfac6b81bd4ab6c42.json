@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Day_02_Rock_Paper_Scissors",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Day_02_Rock_Paper_Scissors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Day_02_Rock_Paper_Scissors-Debug-af56c54d45213ab04a5a.json",
+					"name" : "Day_02_Rock_Paper_Scissors",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-02-Rock-Paper-Scissors/cmake-build-debug",
+		"source" : "C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-02-Rock-Paper-Scissors"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

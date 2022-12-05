@@ -1,0 +1,12 @@
+# ninja log v5
+2	326	6919219613981212	CMakeFiles/Day_01_Calorie_Counting.dir/main.cpp.obj	c21fcc44307d9d6a
+326	448	6919219615123932	Day_01_Calorie_Counting.exe	4b8cbf786bf84fed
+4	486	6919239246815440	CMakeFiles/Day_01_Calorie_Counting.dir/1a.cpp.obj	c499cff11b967bfe
+9	668	6919239248654393	CMakeFiles/Day_01_Calorie_Counting.dir/1b.cpp.obj	2abb8637bc6ae828
+2	115	6919239755791451	Day_01_Calorie_Counting.exe	4b8cbf786bf84fed
+2	451	6919241028985535	CMakeFiles/Day_01_Calorie_Counting.dir/main.cpp.obj	c21fcc44307d9d6a
+451	539	6919241029827503	Day_01_Calorie_Counting.exe	4b8cbf786bf84fed
+2	460	6919241145093057	CMakeFiles/Day_01_Calorie_Counting.dir/main.cpp.obj	c21fcc44307d9d6a
+461	546	6919241145926703	Day_01_Calorie_Counting.exe	4b8cbf786bf84fed
+3	397	6919241295496404	CMakeFiles/Day_01_Calorie_Counting.dir/main.cpp.obj	c21fcc44307d9d6a
+397	485	6919241296341455	Day_01_Calorie_Counting.exe	4b8cbf786bf84fed
