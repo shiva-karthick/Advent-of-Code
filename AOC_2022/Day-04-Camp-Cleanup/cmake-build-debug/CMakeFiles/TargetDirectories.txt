@@ -1,0 +1,3 @@
+C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-04-Camp-Cleanup/cmake-build-debug/CMakeFiles/Day_04_Camp_Cleanup.dir
+C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-04-Camp-Cleanup/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-04-Camp-Cleanup/cmake-build-debug/CMakeFiles/rebuild_cache.dir
