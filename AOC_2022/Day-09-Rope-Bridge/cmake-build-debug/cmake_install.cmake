@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-07-No Space-Left-On-Device
+# Install script for directory: C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-09-Rope-Bridge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Day_07_No_Space_Left_On_Device")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Day_09_Rope_Bridge")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-07-No Space-Left-On-Device/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/shank/Desktop/Advent-of-Code/AOC_2022/Day-09-Rope-Bridge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
