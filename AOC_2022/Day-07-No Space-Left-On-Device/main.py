@@ -1,4 +1,3 @@
-import sys
 from collections import defaultdict
 # infile = sys.argv[1] if len(sys.argv) > 1 else '7.in'
 data = open('AOC_2022\Day-07-No Space-Left-On-Device\input.txt').read().strip()
@@ -29,11 +28,9 @@ $ ls
 
 lines = [x for x in data.split('\n')]
 
-
 # Avoid the key error, provide a default value for the key that does not exist
 directory_size = defaultdict(int)
 LIFO_data_struct = []  # Last In First Out data structure
-
 
 for line in lines:
     # Check for cd command and move into that directory
