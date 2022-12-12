@@ -14,6 +14,8 @@ As described by [Wikipedia](https://en.wikipedia.org/wiki/Advent_of_Code),
 
 - [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/#section=windows) - Java IDE
 
+- [Clion IDE]() - C++ 17 using the legendary Prof. Stephen Halim's notes
+
 ## Notes
 - I have tried to present different solutions in Java and in python.
 - Some of the solutions are not the best in terms of either time or space complexity. However, I have tried to refactor them.
@@ -24,9 +26,7 @@ As described by [Wikipedia](https://en.wikipedia.org/wiki/Advent_of_Code),
 [Shankar](https://github.com/shankar-shiv) - Undergraduate, Electrical Engineering, NUS '24
 
 
-push commit message : aoc-dayX-language-completed
-
-## Problem sets
+## AOC 2021 Problem sets
 
 | Date       | Problems                | Difficulty Level | Time Taken | Completed✅ |
 | ---------- | ----------------------- | ---------------- | ---------- | ---------- |
