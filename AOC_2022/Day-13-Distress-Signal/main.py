@@ -1,60 +1,55 @@
-
-from functools import cmp_to_key
-import sys
-import math
-from copy import deepcopy
 from collections import defaultdict, deque
+from copy import deepcopy
+from functools import cmp_to_key
+from pprint import pprint
 
 data = open("AOC_2022\Day-13-Distress-Signal\input.txt").read().strip()
 lines = [x for x in data.split('\n')]
 
 
-def compare(p1, p2):
-    if isinstance(p1, int) and isinstance(p2, int):
-        if p1 < p2:
-            return -1
-        elif p1 == p2:
+def cmp(left, right) -> bool:
+
+    if isinstance(left, int) and isinstance(right, list):
+        # convert the integer to a list which contains that integer as its only value, then retry the comparison.
+        left = [left]
+
+    if isinstance(left, list) and isinstance(right, int):
+        # convert the integer to a list which contains that integer as its only value, then retry the comparison.
+        right = [right]
+
+    # Base Case
+    if isinstance(left, int) and isinstance(right, int):
+        if left == right:
+            # Otherwise, the inputs are the same integer; continue checking the next part of the input.
             return 0
         else:
-            return 1
-    elif isinstance(p1, list) and isinstance(p2, list):
-        i = 0
-        while i < len(p1) and i < len(p2):
-            c = compare(p1[i], p2[i])
+            return -1 if left < right else 1
+
+    if isinstance(left, list) and isinstance(right, list):
+        for x, y in zip(left, right):
+            c = cmp(x, y)
             if c == -1:
                 return -1
             if c == 1:
                 return 1
-            i += 1
-        if i == len(p1) and i < len(p2):
-            return -1
-        elif i == len(p2) and i < len(p1):
-            return 1
-        else:
+        # If the lists are the same length and no comparison makes a decision about the order, continue checking the next part of the input.
+        if len(left) == len(right):
             return 0
-    elif isinstance(p1, int) and isinstance(p2, list):
-        return compare([p1], p2)
-    else:
-        return compare(p1, [p2])
+        # If the right list runs out of items first, the inputs are not in the right order.
+        return -1 if len(left) < len(right) else 1
+    raise TypeError
 
 
 packets = []
-part1 = 0
-for i, group in enumerate(data.split('\n\n')):
-    p1, p2 = group.split('\n')
-    p1 = eval(p1)
-    p2 = eval(p2)
-    packets.append(p1)
-    packets.append(p2)
-    if compare(p1, p2) == -1:
-        part1 += 1+i
-print(part1)
+result_1 = 0
+for index, group in enumerate(data.split('\n\n')):
+    left, right = group.split("\n")
+    # eval is a good choise here
+    left = eval(left)
+    right = eval(right)
+    packets.append(left)
+    packets.append(right)
+    if cmp(left, right) == -1:
+        result_1 += 1 + index
 
-packets.append([[2]])
-packets.append([[6]])
-packets = sorted(packets, key=cmp_to_key(lambda p1, p2: compare(p1, p2)))
-part2 = 1
-for i, p in enumerate(packets):
-    if p == [[2]] or p == [[6]]:
-        part2 *= i+1
-print(part2)
+print(f"{result_1}")
