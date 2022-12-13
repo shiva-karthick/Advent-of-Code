@@ -1,6 +1,7 @@
 import math
+import sys
 
-data = open('AOC_2022\Day-11-Monkey-in-the-Middle\\input.txt').read().strip()
+data = open('input.txt').read().strip()
 lines = [x for x in data.split('\n')]
 
 
@@ -28,6 +29,8 @@ total_monkeys = len(data.split("\n\n"))
 # create n number of monkey objects
 monkey_list = [Monkey() for _ in range(total_monkeys)]
 
+DIV = []
+
 # collect all data here
 for num, monkey in enumerate(data.split("\n\n")):
     # read for 1 monkey
@@ -38,10 +41,18 @@ for num, monkey in enumerate(data.split("\n\n")):
         [int(i) for i in items.split(':')[1].split(',')])
     monkey_list[num].operation = ''.join(op.split()[-2:])
     monkey_list[num].test_number = int(test.split()[-1])
+    DIV.append(int(test.split()[-1]))
     monkey_list[num].if_true_monkey = int(true.split()[-1])
     monkey_list[num].if_false_monkey = int(false.split()[-1])
 
-for _ in range(0, 20):  # 20 rounds
+
+lcm = 1
+for x in DIV:
+    lcm = (lcm*x)
+print("lcm = {}".format(lcm))
+
+
+for _ in range(0, 10000):  # 20 rounds
     for m in range(0, total_monkeys):  # this constitutes 1 round
         # If a monkey is holding no items at the start of its turn, its turn ends.
         if len(monkey_list[m].items) == 0:
@@ -51,8 +62,10 @@ for _ in range(0, 20):  # 20 rounds
             temp_str = str(index) + monkey_list[m].operation.replace(
                 "old", str(index))
             new = eval(temp_str)
-            # divide by 3, monkey is bored with item
-            new = math.floor(new / 3)
+            # divide by 3, monkey is bored with item; part 1
+            # new = math.floor(new / 3)
+            # part 2
+            new %= lcm
             # check if divisible by test number
             if (new % monkey_list[m].test_number) == 0:  # is divisible; no remainder
                 # throw to if_true_monkey
@@ -67,8 +80,8 @@ for _ in range(0, 20):  # 20 rounds
                     new)
         monkey_list[m].items = []
 
-for m in range(0, total_monkeys):
-    print(monkey_list[m].print_data())
+# for m in range(0, total_monkeys):
+#     print(monkey_list[m].print_data())
 
 count = [0 for _ in range(total_monkeys)]
 for i in range(total_monkeys):
