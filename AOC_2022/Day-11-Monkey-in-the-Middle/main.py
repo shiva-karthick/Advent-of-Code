@@ -49,6 +49,8 @@ for num, monkey in enumerate(data.split("\n\n")):
 lcm = 1
 for x in DIV:
     lcm = (lcm*x)
+
+print("DIV = {}".format(DIV))
 print("lcm = {}".format(lcm))
 
 
@@ -80,8 +82,8 @@ for _ in range(0, 10000):  # 20 rounds
                     new)
         monkey_list[m].items = []
 
-# for m in range(0, total_monkeys):
-#     print(monkey_list[m].print_data())
+for m in range(0, total_monkeys):
+    print(monkey_list[m].print_data())
 
 count = [0 for _ in range(total_monkeys)]
 for i in range(total_monkeys):

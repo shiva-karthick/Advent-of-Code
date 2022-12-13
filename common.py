@@ -1,6 +1,4 @@
 from copy import deepcopy
-from rich import print
-from parse import findall, parse
 from math import prod
 # from more_itertools import chunked, ilen
 from collections import Counter, defaultdict
