@@ -3,8 +3,34 @@ from copy import deepcopy
 from functools import cmp_to_key
 from pprint import pprint
 
-data = open("AOC_2022\Day-13-Distress-Signal\input.txt").read().strip()
+data = open("AOC_2022\Day-13-Distress-Signal\\test_data.txt").read().strip()
 lines = [x for x in data.split('\n')]
+
+
+def cmp_to_key(mycmp):
+    """Convert a cmp= function into a key= function"""
+    class K(object):
+        __slots__ = ['obj']
+
+        def __init__(self, obj):
+            self.obj = obj
+
+        def __lt__(self, other):
+            return mycmp(self.obj, other.obj) < 0
+
+        def __gt__(self, other):
+            return mycmp(self.obj, other.obj) > 0
+
+        def __eq__(self, other):
+            return mycmp(self.obj, other.obj) == 0
+
+        def __le__(self, other):
+            return mycmp(self.obj, other.obj) <= 0
+
+        def __ge__(self, other):
+            return mycmp(self.obj, other.obj) >= 0
+        __hash__ = None
+    return K
 
 
 def cmp(left, right) -> bool:
@@ -42,6 +68,7 @@ def cmp(left, right) -> bool:
 
 packets = []
 result_1 = 0
+result_2 = 1
 for index, group in enumerate(data.split('\n\n')):
     left, right = group.split("\n")
     # eval is a good choise here
@@ -53,3 +80,12 @@ for index, group in enumerate(data.split('\n\n')):
         result_1 += 1 + index
 
 print(f"{result_1}")
+
+packets.append([[2]])
+packets.append([[6]])
+packets = sorted(packets, key=cmp_to_key(lambda p1, p2: cmp(p1, p2)))
+print(packets)
+for index, p in enumerate(packets):
+    if packets[index] == [[2]] or packets[index] == [[6]]:
+        result_2 *= index + 1
+print(result_2)
