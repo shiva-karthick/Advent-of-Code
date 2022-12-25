@@ -1,4 +1,5 @@
 from pprint import pprint
+from functools import lru_cache
 
 data = open('input.txt').read().strip()
 lines = [x for x in data.split('\n')]
@@ -12,6 +13,7 @@ for line in lines:
     dict_[name] = expr.split()
 
 
+@lru_cache
 def is_number(n):
     try:
         float(n)   # Type-casting the string to `float`.
@@ -22,44 +24,50 @@ def is_number(n):
     return True
 
 
-while True:
+@lru_cache
+def main():
+    while True:
 
-    if len(dict_.get('root')) == 1:
-        print((dict_.get('root')[0]))
-        break
+        if len(dict_.get('root')) == 1:
+            print((dict_.get('root')[0]))
+            break
 
-    for pointer_name in dict_.keys():
-        # substitute numbers
-        if len(dict_[pointer_name]) == 1:  # choose a number
-            # loop entire dictionary to substitute the chosen number
-            for name in dict_.keys():
-                if name == pointer_name:
-                    continue
-                else:
-                    if len(dict_[name]) == 3:
-                        if dict_[name][0] == pointer_name:
-                            dict_[name].pop(0)
-                            dict_[name].insert(0, dict_[pointer_name][0])
-                        elif dict_[name][2] == pointer_name:
-                            dict_[name].pop(2)
-                            dict_[name].insert(2, dict_[pointer_name][0])
-                        # new if statement
-                    if len(dict_[name]) == 3 and is_number(dict_[name][0]) and is_number(dict_[name][2]):
-                        if len(dict_[name]) == 3 and dict_[name][1] == "+":
-                            dict_[name] = [
-                                str(float(dict_[name][0]) + float(dict_[name][2]))]
-                        if len(dict_[name]) == 3 and dict_[name][1] == "*":
-                            dict_[name] = [
-                                str(float(dict_[name][0]) * float(dict_[name][2]))]
-                        if len(dict_[name]) == 3 and dict_[name][1] == "/":
-                            dict_[name] = [
-                                str(float(dict_[name][0]) / float(dict_[name][2]))]
+        for pointer_name in dict_.keys():
+            # substitute numbers
+            if len(dict_[pointer_name]) == 1:  # choose a number
+                # loop entire dictionary to substitute the chosen number
+                for name in dict_.keys():
+                    if name == pointer_name:
+                        continue
+                    else:
+                        if len(dict_[name]) == 3:
+                            if dict_[name][0] == pointer_name:
+                                dict_[name].pop(0)
+                                dict_[name].insert(0, dict_[pointer_name][0])
+                            elif dict_[name][2] == pointer_name:
+                                dict_[name].pop(2)
+                                dict_[name].insert(2, dict_[pointer_name][0])
+                            # new if statement
+                        if len(dict_[name]) == 3 and is_number(dict_[name][0]) and is_number(dict_[name][2]):
+                            if len(dict_[name]) == 3 and dict_[name][1] == "+":
+                                dict_[name] = [
+                                    str(float(dict_[name][0]) + float(dict_[name][2]))]
+                            if len(dict_[name]) == 3 and dict_[name][1] == "*":
+                                dict_[name] = [
+                                    str(float(dict_[name][0]) * float(dict_[name][2]))]
+                            if len(dict_[name]) == 3 and dict_[name][1] == "/":
+                                dict_[name] = [
+                                    str(float(dict_[name][0]) / float(dict_[name][2]))]
 
-                        if len(dict_[name]) == 3 and dict_[name][1] == "-":
-                            dict_[name] = [
-                                str(float(dict_[name][0]) - float(dict_[name][2]))]
+                            if len(dict_[name]) == 3 and dict_[name][1] == "-":
+                                dict_[name] = [
+                                    str(float(dict_[name][0]) - float(dict_[name][2]))]
 
 
+main()
+
+
+@lru_cache
 def f(name, h):
     words = dict_[name]
     if name == 'humn' and h >= 0:
