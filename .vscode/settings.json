@@ -1,6 +1,7 @@
 {
-    "files.associations": {
-        "iosfwd": "cpp"
-    },
-    "python.analysis.typeCheckingMode": "off"
+  "files.associations": {
+    "iosfwd": "cpp"
+  },
+  "python.analysis.typeCheckingMode": "off",
+  "cmake.sourceDirectory": "/home/shankar/Shiva/Advent-of-Code/AOC_2023"
 }
