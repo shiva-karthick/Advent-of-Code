@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /home/shankar/Shiva/Advent-of-Code/AOC_2023/build/_deps/gsl-src/include
 
 CXX_FLAGS = 
 

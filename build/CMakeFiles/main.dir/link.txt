@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/main.dir/Day_1.cpp.o -o main 

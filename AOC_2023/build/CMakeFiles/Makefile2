@@ -64,15 +64,47 @@ CMAKE_BINARY_DIR = /home/shankar/Shiva/Advent-of-Code/AOC_2023/build
 
 # The main recursive "all" target.
 all: CMakeFiles/main.dir/all
+all: _deps/gsl-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: _deps/gsl-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/main.dir/clean
+clean: _deps/gsl-build/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/gsl-build
+
+# Recursive "all" directory target.
+_deps/gsl-build/all: _deps/gsl-build/include/all
+.PHONY : _deps/gsl-build/all
+
+# Recursive "preinstall" directory target.
+_deps/gsl-build/preinstall: _deps/gsl-build/include/preinstall
+.PHONY : _deps/gsl-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/gsl-build/clean: _deps/gsl-build/include/clean
+.PHONY : _deps/gsl-build/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/gsl-build/include
+
+# Recursive "all" directory target.
+_deps/gsl-build/include/all:
+.PHONY : _deps/gsl-build/include/all
+
+# Recursive "preinstall" directory target.
+_deps/gsl-build/include/preinstall:
+.PHONY : _deps/gsl-build/include/preinstall
+
+# Recursive "clean" directory target.
+_deps/gsl-build/include/clean:
+.PHONY : _deps/gsl-build/include/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir

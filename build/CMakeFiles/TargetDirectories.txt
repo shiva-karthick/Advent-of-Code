@@ -1,3 +1,0 @@
-/home/shankar/Shiva/Advent-of-Code/build/CMakeFiles/main.dir
-/home/shankar/Shiva/Advent-of-Code/build/CMakeFiles/edit_cache.dir
-/home/shankar/Shiva/Advent-of-Code/build/CMakeFiles/rebuild_cache.dir

@@ -1,40 +1,32 @@
-#+TITLE: Day 1
-
+:PROPERTIES:
+#+TITLE: AOC 2023 notes
 #+AUTHOR: Shiva
 
-#+EMAIL:
-
-#+OPTION:
-
-* Notes
-
-:PROPERTIES:
+* Day 1
 
 :EXPORT_FILE_NAME: classXnotes
 
-:END:
+** Part 1
 
-This is a paragraph in my notes.
+It is simple parsing.
 
-** Subheadline
+** Part 2
 
-- List 1
+For 1 line in the dataset, check for each character if it corresponds to the wordsToNumbers dictionary. If they match, replace it with number. Loop for all lines.
+Next, perfom the same parsing as done in Part 1.
 
-- List 2
+* Day 2
 
-* Braindump
+** Part 1
 
-Remember that 2+2=4.
 
-* Research
 
-** Sources
+** Part 2
 
-1. [[https://wikipedia.com][Wikipedia]]
 
-2. xyz
+** Code Refernces
 
-** Annotations
+1.
 
 * Reading List
 
@@ -64,8 +56,7 @@ DEADLINE: <2019-09-01 Sun>
 
 ** Super Awesome Project
 
-DEADLINE: <2019-09-30 Mon>
-#+TITLE: Class X Template
+#+TITLE: Day 2
 
 #+AUTHOR:
 
