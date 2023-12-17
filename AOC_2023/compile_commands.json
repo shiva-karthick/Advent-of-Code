@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/shankar/Shiva/Advent-of-Code/AOC_2023",
-  "command": "/usr/bin/c++  -isystem /home/shankar/Shiva/Advent-of-Code/AOC_2023/_deps/gsl-src/include  -o CMakeFiles/main.dir/Day_2a.cpp.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day_2a.cpp",
-  "file": "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day_2a.cpp"
+  "command": "/usr/bin/c++  -isystem /home/shankar/Shiva/Advent-of-Code/AOC_2023/_deps/gsl-src/include  -o CMakeFiles/main.dir/Day05-Sample-1.cpp.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day05-Sample-1.cpp",
+  "file": "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day05-Sample-1.cpp"
 }
 ]

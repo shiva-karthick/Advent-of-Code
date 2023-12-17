@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day_2a.cpp" "CMakeFiles/main.dir/Day_2a.cpp.o" "gcc" "CMakeFiles/main.dir/Day_2a.cpp.o.d"
+  "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day05.cpp" "CMakeFiles/main.dir/Day05.cpp.o" "gcc" "CMakeFiles/main.dir/Day05.cpp.o.d"
   )
 
 # Targets to which this target links.

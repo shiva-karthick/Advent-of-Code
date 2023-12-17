@@ -129,29 +129,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Day_2a.o: Day_2a.cpp.o
-.PHONY : Day_2a.o
+Day05.o: Day05.cpp.o
+.PHONY : Day05.o
 
 # target to build an object file
-Day_2a.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day_2a.cpp.o
-.PHONY : Day_2a.cpp.o
+Day05.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day05.cpp.o
+.PHONY : Day05.cpp.o
 
-Day_2a.i: Day_2a.cpp.i
-.PHONY : Day_2a.i
+Day05.i: Day05.cpp.i
+.PHONY : Day05.i
 
 # target to preprocess a source file
-Day_2a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day_2a.cpp.i
-.PHONY : Day_2a.cpp.i
+Day05.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day05.cpp.i
+.PHONY : Day05.cpp.i
 
-Day_2a.s: Day_2a.cpp.s
-.PHONY : Day_2a.s
+Day05.s: Day05.cpp.s
+.PHONY : Day05.s
 
 # target to generate assembly for a file
-Day_2a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day_2a.cpp.s
-.PHONY : Day_2a.cpp.s
+Day05.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day05.cpp.s
+.PHONY : Day05.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... Day_2a.o"
-	@echo "... Day_2a.i"
-	@echo "... Day_2a.s"
+	@echo "... Day05.o"
+	@echo "... Day05.i"
+	@echo "... Day05.s"
 .PHONY : help
 
 

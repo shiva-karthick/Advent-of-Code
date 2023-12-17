@@ -6,6 +6,8 @@ project(
   LANGUAGES CXX)
 
 # find_package(Microsoft.GSL CONFIG REQUIRED)
+set(CMAKE_CXX20_STANDARD_COMPILE_OPTION  "-std=c++2a")
+set(CMAKE_CXX20_EXTENSION_COMPILE_OPTION  "-std=gnu++2a")
 
 include(FetchContent)
 
@@ -18,6 +20,6 @@ FetchContent_Declare(GSL
 FetchContent_MakeAvailable(GSL)
 
 # add_library(mylib my_lib.cpp my_lib.hpp)
-add_executable(main Day_2a.cpp)
+add_executable(main Day05-Sample-1.cpp)
 
 target_link_libraries(main PRIVATE Microsoft.GSL::GSL)

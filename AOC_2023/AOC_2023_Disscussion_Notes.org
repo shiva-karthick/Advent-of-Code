@@ -4,122 +4,45 @@
 
 * Day 1
 
-:EXPORT_FILE_NAME: classXnotes
-
 ** Part 1
-
 It is simple parsing.
 
 ** Part 2
-
 For 1 line in the dataset, check for each character if it corresponds to the wordsToNumbers dictionary. If they match, replace it with number. Loop for all lines.
 Next, perfom the same parsing as done in Part 1.
 
 * Day 2
 
 ** Part 1
+It is simple parsing but need to identify how to parse through string and number.
 
+** Part 2
+Very simple calculation.
+#+begin_src C++
+r_count = std::max(r_count, x);
+#+end_src
+The above code is the most important snippet to take note of.
+
+** Code Refernces
+1. https://github.com/tbeu/AdventOfCode/blob/master/2023/day02/day02.cpp
+
+* Day 3
+
+** Part 1
 
 
 ** Part 2
+* Day 4
 
+** Part 1
+Very simple parsing. use string stream to parse string, number using space as the delimiter character.
 
-** Code Refernces
+** Part 2
+#+begin_src C++
+std::vector<uint32_t> cards(lines.size(), 1);
+#+end_src
+The default value is 1 because we need to count the original card which is itself too.
 
-1.
+* Day 5
 
-* Reading List
-
-** Books
-
-1. [[https://www.gutenberg.org/][Gutenberg]]
-
-** Articles
-
-1. [[https://collegeinfogeek.com/how-to-stay-organized-in-college/][How to Easily Stay Organized and Productive in College]]
-
-* Meetings
-
-** Minutes
-
-:PROPERTIES:
-
-:EXPORT_FILE_NAME: Meeting_X_Minutes
-
-:END:
-
-** Group Meeting 1
-
-DEADLINE: <2019-09-01 Sun>
-
-* Projects
-
-** Super Awesome Project
-
-#+TITLE: Day 2
-
-#+AUTHOR:
-
-#+EMAIL:
-
-#+OPTION:
-
-* Notes
-
-:PROPERTIES:
-
-:EXPORT_FILE_NAME: classXnotes
-
-:END:
-
-This is a paragraph in my notes.
-
-** Subheadline
-
-- List 1
-
-- List 2
-
-* Braindump
-
-Remember that 2+2=4.
-
-* Research
-
-** Sources
-
-1. [[https://wikipedia.com][Wikipedia]]
-
-2. xyz
-
-** Annotations
-
-* Reading List
-
-** Books
-
-1. [[https://www.gutenberg.org/][Gutenberg]]
-
-** Articles
-
-1. [[https://collegeinfogeek.com/how-to-stay-organized-in-college/][How to Easily Stay Organized and Productive in College]]
-
-* Meetings
-
-** Minutes
-
-:PROPERTIES:
-
-:EXPORT_FILE_NAME: Meeting_X_Minutes
-
-:END:
-
-** Group Meeting 1
-
-DEADLINE: <2019-09-01 Sun>
-
-* Projects
-
-** Super Awesome Project
-
-DEADLINE: <2019-09-30 Mon>
+** Part 1
