@@ -46,3 +46,9 @@ The default value is 1 because we need to count the original card which is itsel
 * Day 5
 
 ** Part 1
+
+* Day 6
+** Part 1
+    Honestly, today was quite simple. It is just parsing for the first few steps. Then simple iteration over a few values to check if it exceeds the record.
+** Part 2
+    The second part is very simple to the first except we have to deal with very large numbers. 
