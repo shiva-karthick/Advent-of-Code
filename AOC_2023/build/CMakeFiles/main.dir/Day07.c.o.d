@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/Day06-Sample-1.c.o: \
- /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day06-Sample-1.c \
+CMakeFiles/main.dir/Day07.c.o: \
+ /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day07.c \
  /usr/include/stdc-predef.h \
  /home/shankar/Shiva/Advent-of-Code/AOC_2023/common.h \
  /usr/include/stdio.h \
@@ -71,5 +71,4 @@ CMakeFiles/main.dir/Day06-Sample-1.c.o: \
  /usr/include/assert.h /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/memory.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/memory.h

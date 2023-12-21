@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/main.dir/Day06-Sample-1.c.o -o main 
+/usr/bin/cc CMakeFiles/main.dir/Day08.c.o -o main 

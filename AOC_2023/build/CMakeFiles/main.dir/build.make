@@ -69,28 +69,28 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/Day06-Sample-1.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/Day06-Sample-1.c.o: ../Day06-Sample-1.c
-CMakeFiles/main.dir/Day06-Sample-1.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shankar/Shiva/Advent-of-Code/AOC_2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/Day06-Sample-1.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/Day06-Sample-1.c.o -MF CMakeFiles/main.dir/Day06-Sample-1.c.o.d -o CMakeFiles/main.dir/Day06-Sample-1.c.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day06-Sample-1.c
+CMakeFiles/main.dir/Day08.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Day08.c.o: ../Day08.c
+CMakeFiles/main.dir/Day08.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shankar/Shiva/Advent-of-Code/AOC_2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/Day08.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/Day08.c.o -MF CMakeFiles/main.dir/Day08.c.o.d -o CMakeFiles/main.dir/Day08.c.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day08.c
 
-CMakeFiles/main.dir/Day06-Sample-1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Day06-Sample-1.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day06-Sample-1.c > CMakeFiles/main.dir/Day06-Sample-1.c.i
+CMakeFiles/main.dir/Day08.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Day08.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day08.c > CMakeFiles/main.dir/Day08.c.i
 
-CMakeFiles/main.dir/Day06-Sample-1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Day06-Sample-1.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day06-Sample-1.c -o CMakeFiles/main.dir/Day06-Sample-1.c.s
+CMakeFiles/main.dir/Day08.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Day08.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day08.c -o CMakeFiles/main.dir/Day08.c.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/Day06-Sample-1.c.o"
+"CMakeFiles/main.dir/Day08.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/Day06-Sample-1.c.o
+main: CMakeFiles/main.dir/Day08.c.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shankar/Shiva/Advent-of-Code/AOC_2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable main"
