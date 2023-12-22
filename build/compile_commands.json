@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/shankar/Shiva/Advent-of-Code/build",
+  "command": "/usr/bin/gcc   -g -std=gnu11 -o CMakeFiles/main.dir/Day08.c.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day08.c",
+  "file": "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day08.c"
+}
+]

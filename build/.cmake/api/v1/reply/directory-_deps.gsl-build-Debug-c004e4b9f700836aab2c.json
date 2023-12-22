@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/gsl-build",
+		"source" : "/home/shankar/Shiva/Advent-of-Code/build/_deps/gsl-src"
+	}
+}

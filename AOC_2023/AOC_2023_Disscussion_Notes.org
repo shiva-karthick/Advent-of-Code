@@ -60,5 +60,6 @@ The default value is 1 because we need to count the original card which is itsel
     In the get_type, replace the character 'J' with total number of 'J' values. this is actually quite clever. Then in the cmp_hand(), chooser the correct order.
 * Day 8
 ** Part 1
-
+Form a directed graph for all the nodes. Pass through all the nodes and count the number of steps.
 ** Part 2
+Same as part 1 but place a for loop to run through all nodes where 'A' is the last character. Then, using 2 values of steps, get the LCM. Get the answer for part 2.

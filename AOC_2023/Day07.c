@@ -9,10 +9,10 @@ MER - Merge Sort (recursive implementation),
 QUI - Quick Sort (recursive implementation),
 R-Q - Random Quick Sort (recursive implementation).*/
 
-#include "common.h"
+#include "header_files/common.h"
 
 struct hand {
-  char cards[6];
+  char cards[6]; /* Remember to include 1 for the null terminator */
   int bet, type;
 };
 

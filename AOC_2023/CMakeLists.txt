@@ -9,6 +9,7 @@ project(
 # find_package(Microsoft.GSL CONFIG REQUIRED)
 # set(CMAKE_CXX20_STANDARD_COMPILE_OPTION  "-std=c++2a")
 # set(CMAKE_CXX20_EXTENSION_COMPILE_OPTION  "-std=gnu++2a")
+set (CMAKE_C_STANDARD 11)
 
 include(FetchContent)
 
