@@ -29,15 +29,14 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -62,8 +61,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -107,7 +106,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:UNINITIALIZED=1l
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -275,9 +274,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
-//No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/shankar/Downloads/vcpkg/scripts/buildsystems/vcpkg.cmake
-
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -310,20 +306,8 @@ GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 //Value Computed by CMake
 GSL_BINARY_DIR:STATIC=/home/shankar/Shiva/Advent-of-Code/AOC_2023/build/_deps/gsl-build
 
-//Path to a library.
-GSL_CBLAS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgslcblas.so
-
-//Path to a library.
-GSL_CBLAS_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libgslcblas.so
-
-//Path to a program.
-GSL_CONFIG_EXECUTABLE:FILEPATH=GSL_CONFIG_EXECUTABLE-NOTFOUND
-
 //Use c++ standard
 GSL_CXX_STANDARD:STRING=14
-
-//Path to a file.
-GSL_INCLUDE_DIR:PATH=/usr/include
 
 //Generate and install GSL target
 GSL_INSTALL:BOOL=OFF
@@ -331,40 +315,11 @@ GSL_INSTALL:BOOL=OFF
 //Value Computed by CMake
 GSL_IS_TOP_LEVEL:STATIC=OFF
 
-//Path to a library.
-GSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgsl.so
-
-//Path to a library.
-GSL_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libgsl.so
-
-GSL_ROOT_DIR:STRING=/usr
-
 //Value Computed by CMake
 GSL_SOURCE_DIR:STATIC=/home/shankar/Shiva/Advent-of-Code/AOC_2023/build/_deps/gsl-src
 
 //Build and perform GSL tests
 GSL_TEST:BOOL=OFF
-
-//The directory containing a CMake configuration file for Microsoft.GSL.
-Microsoft.GSL_DIR:PATH=Microsoft.GSL_DIR-NOTFOUND
-
-//Arguments to supply to pkg-config
-PKG_CONFIG_ARGN:STRING=
-
-//pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
-
-//The directory containing a CMake configuration file for gsl.
-gsl_DIR:PATH=gsl_DIR-NOTFOUND
-
-//Path to a library.
-pkgcfg_lib_GSL_gsl:FILEPATH=/usr/lib/x86_64-linux-gnu/libgsl.so
-
-//Path to a library.
-pkgcfg_lib_GSL_gslcblas:FILEPATH=/usr/lib/x86_64-linux-gnu/libgslcblas.so
-
-//Path to a library.
-pkgcfg_lib_GSL_m:FILEPATH=/usr/lib/x86_64-linux-gnu/libm.so
 
 
 ########################
@@ -437,6 +392,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -544,74 +501,10 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding GSL
-FIND_PACKAGE_MESSAGE_DETAILS_GSL:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libgsl.so][/usr/lib/x86_64-linux-gnu/libgslcblas.so][v2.7.1()]
-//Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GSL_CBLAS_LIBRARY
-GSL_CBLAS_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GSL_CBLAS_LIBRARY_DEBUG
-GSL_CBLAS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-GSL_CFLAGS:INTERNAL=
-GSL_CFLAGS_I:INTERNAL=
-GSL_CFLAGS_OTHER:INTERNAL=
-GSL_FOUND:INTERNAL=1
-GSL_INCLUDEDIR:INTERNAL=/usr/include
-//ADVANCED property for variable: GSL_INCLUDE_DIR
-GSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
-GSL_INCLUDE_DIRS:INTERNAL=
-GSL_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lgsl;-lgslcblas;-lm
-GSL_LDFLAGS_OTHER:INTERNAL=
-GSL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-GSL_LIBRARIES:INTERNAL=gsl;gslcblas;m
-//ADVANCED property for variable: GSL_LIBRARY
-GSL_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GSL_LIBRARY_DEBUG
-GSL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-GSL_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
-GSL_LIBS:INTERNAL=
-GSL_LIBS_L:INTERNAL=
-GSL_LIBS_OTHER:INTERNAL=
-GSL_LIBS_PATHS:INTERNAL=
-GSL_MODULE_NAME:INTERNAL=gsl
-GSL_PREFIX:INTERNAL=/usr
-//ADVANCED property for variable: GSL_ROOT_DIR
-GSL_ROOT_DIR-ADVANCED:INTERNAL=1
-GSL_STATIC_CFLAGS:INTERNAL=
-GSL_STATIC_CFLAGS_I:INTERNAL=
-GSL_STATIC_CFLAGS_OTHER:INTERNAL=
-GSL_STATIC_INCLUDE_DIRS:INTERNAL=
-GSL_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lgsl;-lgslcblas;-lm
-GSL_STATIC_LDFLAGS_OTHER:INTERNAL=
-GSL_STATIC_LIBDIR:INTERNAL=
-GSL_STATIC_LIBRARIES:INTERNAL=gsl;gslcblas;m
-GSL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
-GSL_STATIC_LIBS:INTERNAL=
-GSL_STATIC_LIBS_L:INTERNAL=
-GSL_STATIC_LIBS_OTHER:INTERNAL=
-GSL_STATIC_LIBS_PATHS:INTERNAL=
-GSL_VERSION:INTERNAL=2.7.1
 //Native visualizers are Visual Studio extension
 GSL_VS_ADD_NATIVE_VISUALIZERS:INTERNAL=FALSE
-GSL_gsl_INCLUDEDIR:INTERNAL=
-GSL_gsl_LIBDIR:INTERNAL=
-GSL_gsl_PREFIX:INTERNAL=
-GSL_gsl_VERSION:INTERNAL=
-//ADVANCED property for variable: PKG_CONFIG_ARGN
-PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
-PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-__pkg_config_arguments_GSL:INTERNAL=QUIET;gsl
-__pkg_config_checked_GSL:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GSL_gsl
-pkgcfg_lib_GSL_gsl-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GSL_gslcblas
-pkgcfg_lib_GSL_gslcblas-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GSL_m
-pkgcfg_lib_GSL_m-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

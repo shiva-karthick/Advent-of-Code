@@ -1,1 +1,0 @@
-/usr/bin/gcc -g CMakeFiles/main.dir/Day08.c.o -o main 

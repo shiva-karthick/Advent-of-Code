@@ -6,15 +6,9 @@ As described by [Wikipedia](https://en.wikipedia.org/wiki/Advent_of_Code),
 
 
 ## Tech
-- [Vim Text Editor](https://www.vim.org/)
-
-- [Python 3.6 using WSL2 Ubuntu 18.04](https://docs.microsoft.com/en-us/windows/wsl/install)
-
-- [Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) - Written in Java™ SE Development Kit 11.0.9 (JDK 11.0.9)
-
-- [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/#section=windows) - Java IDE
-
-- [Clion IDE]() - C++ 17 using the legendary Prof. Stephen Halim's notes
+C is still the king!
+I LOVE C programming due to its simplicity and elegance. So, I plan to use C mostly with a little Python, C++ and Golang sprinked in!
+- [Emacs Text Editor](https://www.gnu.org/software/emacs/)
 
 ## Notes
 - I have tried to present different solutions in Java and in python.
@@ -23,7 +17,7 @@ As described by [Wikipedia](https://en.wikipedia.org/wiki/Advent_of_Code),
 
 ## Author
 
-[Shankar](https://github.com/shankar-shiv) - Undergraduate, Electrical Engineering, NUS '24
+[Shiva](https://github.com/shiva-karthick) - Undergraduate, Electrical Engineering, NUS '24
 
 
 ## AOC 2021 Problem sets

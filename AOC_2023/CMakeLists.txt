@@ -9,19 +9,19 @@ project(
 # find_package(Microsoft.GSL CONFIG REQUIRED)
 # set(CMAKE_CXX20_STANDARD_COMPILE_OPTION  "-std=c++2a")
 # set(CMAKE_CXX20_EXTENSION_COMPILE_OPTION  "-std=gnu++2a")
-set (CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 11)
 
 include(FetchContent)
 
 FetchContent_Declare(GSL
-    GIT_REPOSITORY "https://github.com/microsoft/GSL"
-    GIT_TAG "v4.0.0"
-    GIT_SHALLOW ON
+  GIT_REPOSITORY "https://github.com/microsoft/GSL"
+  GIT_TAG "v4.0.0"
+  GIT_SHALLOW ON
 )
 
 FetchContent_MakeAvailable(GSL)
 
 # add_library(mylib my_lib.cpp my_lib.hpp)
-add_executable(main Day08.c)
+add_executable(main Day09-copy.c)
 
 # target_link_libraries(main PRIVATE Microsoft.GSL::GSL)
