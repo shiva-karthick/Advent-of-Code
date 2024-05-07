@@ -22,6 +22,6 @@ FetchContent_Declare(GSL
 FetchContent_MakeAvailable(GSL)
 
 # add_library(mylib my_lib.cpp my_lib.hpp)
-add_executable(main Day09-copy.c)
+add_executable(main Day10.c)
 
 # target_link_libraries(main PRIVATE Microsoft.GSL::GSL)

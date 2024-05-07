@@ -1,1 +1,1 @@
-/usr/bin/gcc -g CMakeFiles/main.dir/Day09-copy.c.o -o main 
+/usr/bin/gcc -g CMakeFiles/main.dir/Day10.c.o -o main 

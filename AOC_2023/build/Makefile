@@ -129,29 +129,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Day09-copy.o: Day09-copy.c.o
-.PHONY : Day09-copy.o
+Day10.o: Day10.c.o
+.PHONY : Day10.o
 
 # target to build an object file
-Day09-copy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day09-copy.c.o
-.PHONY : Day09-copy.c.o
+Day10.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day10.c.o
+.PHONY : Day10.c.o
 
-Day09-copy.i: Day09-copy.c.i
-.PHONY : Day09-copy.i
+Day10.i: Day10.c.i
+.PHONY : Day10.i
 
 # target to preprocess a source file
-Day09-copy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day09-copy.c.i
-.PHONY : Day09-copy.c.i
+Day10.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day10.c.i
+.PHONY : Day10.c.i
 
-Day09-copy.s: Day09-copy.c.s
-.PHONY : Day09-copy.s
+Day10.s: Day10.c.s
+.PHONY : Day10.s
 
 # target to generate assembly for a file
-Day09-copy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day09-copy.c.s
-.PHONY : Day09-copy.c.s
+Day10.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Day10.c.s
+.PHONY : Day10.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... Day09-copy.o"
-	@echo "... Day09-copy.i"
-	@echo "... Day09-copy.s"
+	@echo "... Day10.o"
+	@echo "... Day10.i"
+	@echo "... Day10.s"
 .PHONY : help
 
 

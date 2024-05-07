@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/shankar/Shiva/Advent-of-Code/AOC_2023/build",
-  "command": "/usr/bin/gcc   -g -std=gnu11 -o CMakeFiles/main.dir/Day09-copy.c.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day09-copy.c",
-  "file": "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day09-copy.c"
+  "command": "/usr/bin/gcc   -g -std=gnu11 -o CMakeFiles/main.dir/Day10.c.o -c /home/shankar/Shiva/Advent-of-Code/AOC_2023/Day10.c",
+  "file": "/home/shankar/Shiva/Advent-of-Code/AOC_2023/Day10.c"
 }
 ]
