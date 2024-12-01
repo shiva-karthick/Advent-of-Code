@@ -1,7 +1,32 @@
 {
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/local/include",
+        "/usr/include",
+        "/Library/Developer/CommandLineTools/usr/include/c++/v1"
+      ],
+      "defines": [],
+      "macFrameworkPath": ["/System/Library/Frameworks", "/Library/Frameworks"],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-clang-x64"
+    }
+  ],
+  "version": 4,
   "files.associations": {
-    "iosfwd": "cpp"
-  },
-  "python.analysis.typeCheckingMode": "off",
-  "cmake.sourceDirectory": "/home/shankar/Shiva/Advent-of-Code/AOC_2023"
+    "istream": "cpp",
+    "iostream": "cpp",
+    "__split_buffer": "cpp",
+    "deque": "cpp",
+    "vector": "cpp",
+    "algorithm": "cpp",
+    "cassert": "cpp",
+    "unordered_map": "cpp",
+    "__config": "cpp",
+    "fstream": "cpp"
+  }
 }

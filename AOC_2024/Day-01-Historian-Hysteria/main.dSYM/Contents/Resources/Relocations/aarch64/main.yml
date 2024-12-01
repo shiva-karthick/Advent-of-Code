@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/shivakarthick/Documents/my-github-projects/Advent-of-Code/AOC_2024/Day-01-Historian-Hysteria/main'
+relocations:     []
+...

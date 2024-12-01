@@ -1,0 +1,3 @@
+/Users/shivakarthick/Documents/my-github-projects/Advent-of-Code/AOC_2024/Day-01-Historian-Hysteria/CMakeFiles/main.dir
+/Users/shivakarthick/Documents/my-github-projects/Advent-of-Code/AOC_2024/Day-01-Historian-Hysteria/CMakeFiles/edit_cache.dir
+/Users/shivakarthick/Documents/my-github-projects/Advent-of-Code/AOC_2024/Day-01-Historian-Hysteria/CMakeFiles/rebuild_cache.dir
